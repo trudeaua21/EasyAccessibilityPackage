@@ -24,6 +24,9 @@ This feature includes:
 
 
 # Copyright Notice
+## Easy Accessibility Package
+This package is offered under the [MIT License](https://github.com/trudeaua21/EasyAccessibilityPackage/blob/main/LICENSE) 
+
 ## Tolk
 _Tolk_ can be found at: [https://github.com/dkager/tolk](https://github.com/dkager/tolk)
 
