@@ -321,7 +321,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 115632169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de6edceb64071d24c8b345a3718cb01b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2688002fcbe1e9d40a72a763254dca32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1391465100}
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 163038483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9825492296e6cae48876655858b3e731, type: 3}
+  m_Script: {fileID: 11500000, guid: f6fae6bc7031346469e91125e31f115f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &163038485
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -727,7 +727,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 115632171}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayerController, trudeaua.EasyAccessibility.unfinishedSRExample
         m_MethodName: incrementCount
         m_Mode: 1
         m_Arguments:
@@ -887,10 +887,10 @@ RectTransform:
   m_Father: {fileID: 318204775}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -180}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 52.43}
+  m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1391465100
 MonoBehaviour:
@@ -914,11 +914,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 40
+    m_MaxSize: 45
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1084,7 +1084,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 163038484}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneController, trudeaua.EasyAccessibility.unfinishedSRExample
         m_MethodName: loadMainMenuScene
         m_Mode: 1
         m_Arguments:
