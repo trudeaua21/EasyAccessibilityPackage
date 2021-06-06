@@ -1,6 +1,6 @@
 {
   "name": "com.trudeaua.easyaccessibility",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "displayName": "Easy Accessibility Package",
   "description": "A package to add remappable controls and screen reader support within Unity",
   "unity": "2020.3",
