@@ -1,0 +1,19 @@
+{
+    "name": "trudeaua.EasyAccessibility.ControlsEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a27f0fe9f05cb7b419c6a56e51665405",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:222ac17d7ca16f044bcc295aa60b6212",
+        "GUID:6a1d7c9c789c48547be393c5019c4eb4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
