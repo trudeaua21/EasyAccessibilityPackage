@@ -1,9 +1,8 @@
 {
-    "name": "trudeaua.EasyAccessibility.Editor",
+    "name": "trudeaua.EasyAccessibility.Controls.UI",
     "rootNamespace": "",
     "references": [
-        "GUID:c1e21396cd3b56d469adbffaab91cf8d",
-        "GUID:ed32be1434da31749bbe6ab5396f50f3"
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

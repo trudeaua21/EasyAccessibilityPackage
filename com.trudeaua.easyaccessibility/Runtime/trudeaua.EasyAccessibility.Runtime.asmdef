@@ -2,7 +2,8 @@
     "name": "trudeaua.EasyAccessibility.Runtime",
     "rootNamespace": "",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c"
+        "GUID:4edca004c8fc7d6499436d089eeaaad9",
+        "GUID:a27f0fe9f05cb7b419c6a56e51665405"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
