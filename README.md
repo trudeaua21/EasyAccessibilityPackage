@@ -32,6 +32,8 @@ _Tolk_ can be found at: [https://github.com/dkager/tolk](https://github.com/dkag
 
 To compile the _Tolk_ DLLs included in this package, _Tolk_'s Makefiles were modified to exclude compilation instructions for its Java libraries. None of the underlying source code that was compiled into the included DLLs was modified.
 
+Even though I have packaged the _Tolk_ DLLs into this package, I still acknowledge that the more security-minded option is for you look at the source code and compile it yourself. However, I understand that adds a bit of a layer of difficulty to the usage of this package, so that may not be an option everyone pursues.
+
 _Tolk_ is licensed under the GNU Lesser General Public License v3.0. See [Tolk-LICENSE](https://github.com/trudeaua21/EasyAccessibilityPackage/blob/main/Tolk-LICENSE)
 
 ## Input System
