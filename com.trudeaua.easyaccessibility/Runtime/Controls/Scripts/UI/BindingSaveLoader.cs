@@ -7,6 +7,11 @@ using UnityEngine.InputSystem;
 /// 
 /// The key in PlayerPrefs that a specific action/binding pair will correspond to
 /// is the string representation of the action's id, followed by the binding index.
+/// 
+/// <remarks>
+/// NOTE: If you change parts of your control mappings outside of this class,
+/// this class may not function as intended.
+/// </remarks>
 /// </summary>
 public class BindingSaveLoader : MonoBehaviour
 {
@@ -242,32 +247,11 @@ public class BindingSaveLoader : MonoBehaviour
     {
         return action.id.ToString() + "," + bindingIndex.ToString();
     }
-
+    
     public static string getProcessorPrefsKey(InputAction action, int bindingIndex)
     {
          return getBindingPrefsKey(action, bindingIndex) + "," + "processors";
     }
-
-
-    /// <summary>
-    /// Splits up a PlayerPrefs key to get the binding index portion of the key.
-    /// </summary>
-    /// <param name="key">The key from PlayerPrefs to split up</param>
-    /// <returns>The binding index that the key was made for.</returns>
-    /*public int getBindingIndexFromPrefsKey(string key)
-    {
-        // gets the ID part of the key, which will be before the comma
-        string[] splitKey = key.Split(',');
-
-        if (splitKey.Length != 2)
-        {
-            throw new System.ArgumentException("Invalid key - key should be formatted like[ID],[Index] - was \"" + key + "\"");
-        }
-
-        int bindingIndex = int.Parse(splitKey[1]);
-
-        return bindingIndex;
-    }*/
 
     /// <summary>
     /// Overrides a given binding with the given control path. In essence, this is what "remaps" a binding to use a different 
@@ -284,10 +268,7 @@ public class BindingSaveLoader : MonoBehaviour
     /// </param>
     public static void overrideBinding(InputAction action, int bindingIndex, string overridePath, string processors)
     {
-        InputBinding newBinding = new InputBinding();
-        newBinding.overridePath = overridePath;
-        newBinding.overrideProcessors = processors;
-
+        InputBinding newBinding = new InputBinding(overridePath, processors: processors);
         InputActionRebindingExtensions.ApplyBindingOverride(action, bindingIndex, newBinding);
     }
 }
