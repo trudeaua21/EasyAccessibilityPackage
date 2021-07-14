@@ -1,11 +1,13 @@
 {
-    "name": "trudeaua.EasyAccessibility.Runtime.Tests.asmdef",
+    "name": "trudeaua.EasyAccessibility.Editor.Tests.asmdef",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
