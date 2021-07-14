@@ -6,9 +6,18 @@ using UnityEngine;
 
 /// <summary>
 /// Contains helpers to interface with processors, which are generally stored
-/// as comma delimited strings. Each processor is generally formatted as follows:
+/// as comma delimited strings.
 /// 
-/// [Processor Name]([param]=[value] [param]=[value]...)
+/// <remarks>
+/// Each processor is generally formatted as follows:
+/// 
+/// [Processor Name]([param]=[value] [delimiter - may be just a space, could include a comma] [param]=[value]...)
+/// 
+/// Additionally, multiple processors are stored in a comma delimited list on the individual actions/bindings they're applied 
+/// to, making the final format something like:
+/// 
+/// [Processor String], [Processor String], ...
+/// </remarks>
 /// </summary>
 public class ProcessorStringHelper : MonoBehaviour
 {
@@ -21,7 +30,6 @@ public class ProcessorStringHelper : MonoBehaviour
 
     /// <summary>
     /// Searches a processor string to see if it contains a given processor.
-    /// processor.
     /// </summary>
     /// <param name="processors">A comma-delimited string of processors.</param>
     /// <param name="processorName">The name of the processor to search for (case-sensitive).</param>
@@ -34,8 +42,8 @@ public class ProcessorStringHelper : MonoBehaviour
             return false;
         }
 
-        // TODO: this works for now, but in the future we will want to check to make sure
-        // to check this with regex to actually make sure the given string is a processor name
+        // TODO: this works for now, but in the future we will want to make sure to check 
+        // this with regex to actually make sure the given string is a processor name
         // instead of a value or parameter
 
         return true;
