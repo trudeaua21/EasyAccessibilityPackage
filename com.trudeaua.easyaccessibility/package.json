@@ -6,7 +6,8 @@
   "unity": "2020.3",
   "unityRelease": "0f1",
   "dependencies": {
-    "com.unity.inputsystem": "1.0.2"
+    "com.unity.inputsystem": "1.0.2",
+    "com.unity.test-framework": "1.1.27"
   },
   "keywords": [
     "Controls",
@@ -20,16 +21,16 @@
     "Vision"
   ],
   "samples": [
-	{
-		"displayName": "Screen Reader Example",
-		"description": "An example showing off the screen reader functionality. Contains both a finished example, and an unfinished one to work through with the tutorial.",
-		"path": "Samples~/Screen Reader"
-	},
-	{
-		"displayName": "Remappable Controls Example",
-		"description": "An example showing off the remappable controls functionality. Contains both a finished example, and an unfinished one to work through with the tutorial.",
-		"path": "Samples~/Controls"
-	}
+    {
+      "displayName": "Screen Reader Example",
+      "description": "An example showing off the screen reader functionality. Contains both a finished example, and an unfinished one to work through with the tutorial.",
+      "path": "Samples~/Screen Reader"
+    },
+    {
+      "displayName": "Remappable Controls Example",
+      "description": "An example showing off the remappable controls functionality. Contains both a finished example, and an unfinished one to work through with the tutorial.",
+      "path": "Samples~/Controls"
+    }
   ],
   "author": {
     "name": "Aaron Trudeau",
