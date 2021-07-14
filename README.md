@@ -8,7 +8,10 @@ There are two main features included with this package: **Remappable Controls** 
 
 
 
-### Remappable Controls
+### Remappable Controls**
+
+** - Upcoming changes to the Unity Input System may drastically change how this feature works (mainly the save/load process - see [#6](https://github.com/trudeaua21/EasyAccessibilityPackage/issues/6)). However, I haven't looked at how the new Input System Changes could affect the handling of processors, so there's a decent chance that some of the features offered here will still be worthwhile to keep within the package. Additionally, I provide a UI for processor application, which is still fairly distinct from the base Input System example.
+
 This feature includes:
 * Modifications of Unity's _Input System_ examples to allow saving/loading remapped controls between play sessions.
 * Scripts and `GameObjects` that allow stick directions to be remapped (both by inverting the X/Y axes, and by changing "North" on a joystick).
