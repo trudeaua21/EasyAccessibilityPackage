@@ -1,19 +1,11 @@
 {
     "name": "trudeaua.EasyAccessibility.RuntimeTests",
-    "rootNamespace": "",
     "references": [
-        "GUID:582f0122f8d20ca4483e16e98bce8bbd"
+        "trudeaua.EasyAccessibility.Runtime"
     ],
     "optionalUnityReferences": [
         "TestAssemblies"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+    "excludePlatforms": []
 }
