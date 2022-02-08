@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Run tests
         id: runTests
-        uses: trudeaua21/unity-test-runner
+        uses: trudeaua21/unity-test-runner@main
         with:
           projectPath: ./com.trudeaua.easyaccessibility
           unityVersion: "2020.3.0f1"
