@@ -1,0 +1,11 @@
+{
+    "name": "trudeaua.EasyAccessibility.RuntimeTests",
+    "references": [
+        "trudeaua.EasyAccessibility.Runtime"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
