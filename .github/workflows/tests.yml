@@ -4,6 +4,9 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
       - name: Run tests
         id: runTests
         uses: trudeaua21/unity-test-runner@main
