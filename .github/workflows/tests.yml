@@ -15,6 +15,6 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           projectPath: ./com.trudeaua.easyaccessibility
-          unityVersion: "2020.3.0f1"
+          unityVersion: "2020.3.29f1"
           testMode: all
           packageMode: true
