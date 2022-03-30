@@ -16,6 +16,5 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           projectPath: ./com.trudeaua.easyaccessibility
           unityVersion: "2020.3.0f1"
-          customImage: 'aarontrudeau/unity-docker-jq-example:latest'
           testMode: all
           packageMode: true
