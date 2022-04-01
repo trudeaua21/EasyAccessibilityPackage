@@ -1,5 +1,6 @@
 name: Run Unity Tests
 on: [pull_request, workflow_dispatch]
+
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -16,5 +17,6 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           projectPath: ./com.trudeaua.easyaccessibility
           unityVersion: "2020.3.0f1"
+          customImage: 'aarontrudeau/editor:first'
           testMode: all
           packageMode: true
