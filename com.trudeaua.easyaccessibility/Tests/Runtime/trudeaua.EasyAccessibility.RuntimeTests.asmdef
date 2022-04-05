@@ -1,7 +1,8 @@
 {
     "name": "trudeaua.EasyAccessibility.RuntimeTests",
     "references": [
-        "trudeaua.EasyAccessibility.Runtime"
+        "trudeaua.EasyAccessibility.Runtime",
+        "Unity.InputSystem"
     ],
     "optionalUnityReferences": [
         "TestAssemblies"
