@@ -2,8 +2,8 @@
     "name": "trudeaua.EasyAccessibility.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:582f0122f8d20ca4483e16e98bce8bbd",
-        "GUID:75469ad4d38634e559750d17036d5f7c"
+        "trudeaua.EasyAccessibility.Runtime",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [
         "Editor"

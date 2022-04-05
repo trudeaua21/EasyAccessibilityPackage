@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using UnityEngine.InputSystem;
 
 public class RuntimeExampleTests
 {
@@ -12,6 +13,12 @@ public class RuntimeExampleTests
     {
         // Use the Assert class to test conditions
         Assert.AreEqual(2, 2);
+    }
+
+    [Test]
+    public void InputSystemWorksProperly() {
+        Assert.AreEqual(InputSystem.version.ToString(), "1.0.2.0");
+        Assert.AreNotEqual(InputSystem.version.ToString(), "notaversion");
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
