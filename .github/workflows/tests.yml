@@ -18,4 +18,5 @@ jobs:
           projectPath: ./com.trudeaua.easyaccessibility
           unityVersion: "2020.3.0f1"
           testMode: all
+          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+trudeaua.EasyAccessibility.*,-*Tests*'
           packageMode: true
