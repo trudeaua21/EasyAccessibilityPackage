@@ -21,6 +21,18 @@ public class RuntimeExampleTests
         Assert.AreNotEqual(InputSystem.version.ToString(), "notaversion");
     }
 
+    [Test]
+    public void hasProcessorTest()
+    {
+        string processorString = "thing(arg1=false)";
+
+        bool trueResult = ProcessorStringHelper.hasProcessor(processorString, "thing");
+        bool falseResult = ProcessorStringHelper.hasProcessor(processorString, "owijfoij");
+
+        Assert.IsTrue(trueResult);
+        Assert.IsFalse(falseResult);
+    }
+
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]

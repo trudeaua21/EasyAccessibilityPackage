@@ -18,4 +18,13 @@ jobs:
           projectPath: ./com.trudeaua.easyaccessibility
           unityVersion: "2020.3.0f1"
           testMode: all
+          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+trudeaua.EasyAccessibility.*,-*Tests*'
           packageMode: true
+
+      # Upload coverage
+      - name: Upload coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: Package Coverage results (all)
+          path: ${{ steps.runTests.outputs.coveragePath }}
+          retention-days: 1
