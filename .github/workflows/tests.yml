@@ -9,8 +9,9 @@ jobs:
         uses: actions/checkout@v2.4.0
 
       - name: copy dir to new dir
-        run: pwd 
-        run: echo "$GITHUB_WORKSPACE"
+        run: |
+          pwd 
+          echo "$GITHUB_WORKSPACE"
 
       - name: Run tests
         id: runTests
