@@ -11,7 +11,7 @@ jobs:
       - name: copy dir to new dir
         run: |
           folderName=$(echo "${PWD##*/}")
-          rsync -r "$GITHUB_WORKSPACE" "GITHUB_WORKSPACE" 
+          rsync -r "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE" 
           ls -F "$GITHUB_WORKSPACE"
 
       - name: Run tests
