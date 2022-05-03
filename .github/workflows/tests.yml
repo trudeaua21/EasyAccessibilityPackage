@@ -9,9 +9,9 @@ jobs:
         uses: actions/checkout@v2.4.0
 
       - name: copy dir to new dir
-        run: |
-          pwd 
-          echo "$GITHUB_WORKSPACE"
+        runs: |
+          cp -r "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE/copiedPackage" 
+          rm "$GITHUB_WORKSPACE/copiedPackage/_activate-license"
 
       - name: Run tests
         id: runTests
