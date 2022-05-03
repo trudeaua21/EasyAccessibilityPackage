@@ -12,7 +12,7 @@ jobs:
         run: |
           folderName=$(echo "${PWD##*/}")
           rsync -r "$GITHUB_WORKSPACE" "copiedProject" 
-          ls -F "copiedProject"
+          ls -F "copiedProject/$folderName"
 
       - name: Run tests
         id: runTests
@@ -21,7 +21,7 @@ jobs:
             UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          projectPath: ${{ env.GITHUB_WORKSPACE }}/${{ env.folderName}}
+          projectPath: ${{ github.workspace }}/EasyAccessibilityPackage
           unityVersion: "2020.3.0f1"
           testMode: all
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+trudeaua.EasyAccessibility.*,-*Tests*'
