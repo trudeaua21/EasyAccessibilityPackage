@@ -10,8 +10,9 @@ jobs:
 
       - name: copy dir to new dir
         run: |
-          rsync -r "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE/copiedPackage" 
-          rm "$GITHUB_WORKSPACE/copiedPackage/_activate-license"
+          folderName=$(echo "${PWD##*/}")
+          rsync -Rr "." "." 
+          rm "./folderName/_activate-license"
 
       - name: Run tests
         id: runTests
@@ -20,7 +21,7 @@ jobs:
             UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          projectPath: ${{ env.GITHUB_WORKSPACE }}/copiedPackage
+          projectPath: ${{ env.GITHUB_WORKSPACE }}/${{ env.folderName}}
           unityVersion: "2020.3.0f1"
           testMode: all
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+trudeaua.EasyAccessibility.*,-*Tests*'
