@@ -11,8 +11,8 @@ jobs:
       - name: copy dir to new dir
         run: |
           folderName=$(echo "${PWD##*/}")
-          rsync -Rr "." "." 
-          rm "./$folderName/_activate-license"
+          rsync -r "$GITHUB_WORKSPACE" "GITHUB_WORKSPACE" 
+          ls -F "$GITHUB_WORKSPACE"
 
       - name: Run tests
         id: runTests
