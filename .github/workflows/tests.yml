@@ -8,6 +8,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.4.0
 
+      - name: copy dir to new dir
+        runs: cp -r ${{ env.GITHUB_WORKSPACE }} ${{ env.GITHUB_WORKSPACE }}/copiedPackage \
+              rm ${{ env.GITHUB_WORKSPACE }}/copiedPackage/_activate-license
+
       - name: Run tests
         id: runTests
         uses: trudeaua21/unity-test-runner@main
@@ -15,7 +19,7 @@ jobs:
             UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          projectPath: ${{ env.GITHUB_WORKSPACE }}
+          projectPath: ${{ env.GITHUB_WORKSPACE }}/copiedPackage
           unityVersion: "2020.3.0f1"
           testMode: all
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+trudeaua.EasyAccessibility.*,-*Tests*'
