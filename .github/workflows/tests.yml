@@ -10,7 +10,7 @@ jobs:
 
       - name: copy dir to new dir
         run: |
-          cp -r "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE/copiedPackage" 
+          rsync -r "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE/copiedPackage" 
           rm "$GITHUB_WORKSPACE/copiedPackage/_activate-license"
 
       - name: Run tests
