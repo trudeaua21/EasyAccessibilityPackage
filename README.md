@@ -1,6 +1,9 @@
 # Easy Accessibility Package
 The goal of the Easy Accessibility Package is to provide a free, easy to use resource to help Unity developers include accessibility features into their games. 
 
+## IMPORTANT NOTE
+This project will not be maintained, as I've stopped using Unity. I'm likely going to make a similar project in Godot once I have more time (which will hopefully be more fleshed out). 
+
 See the [tutorial](https://github.com/trudeaua21/EasyAccessibilityPackage/blob/main/Tutorial.md) for instructions on installation and use.
 
 ## Features 
