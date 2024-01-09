@@ -51,7 +51,7 @@ This package is designed to hopefully be useful in any context, but may be espec
 10. Navigate to the root directory of your project (where the `Assets` folder itself is located) and paste the copied DLL files.
 11. Return to the Unity Editor.
 12. Finally, navigate to **Edit->Project Settings->Player->Other Settings->Active Input Handling** and select **Both** from the dropdown menu. This will restart the Editor.
-13. **Screen Reader Support in Game Builds** - The above instructions only provide screen reader support in the editor. To provide Screen Reader support in game builds, add the files `nvdaControllerClient.dll`, `SAAPI64.dll`, and `Tolk.dll` to your Build folder (or whatever the folder with your .exe is called). Thank you to [GrumpyCrouton](https://github.com/GrumpyCrouton) for [bringing this to my attention.](#24)
+13. **Screen Reader Support in Game Builds** - The above instructions only provide screen reader support in the editor. To provide Screen Reader support in game builds, add the files `nvdaControllerClient.dll`, `SAAPI64.dll`, and `Tolk.dll` to your Build folder (or whatever the folder with your .exe is called). Thank you to [GrumpyCrouton](https://github.com/GrumpyCrouton) for [bringing this to my attention.](https://github.com/trudeaua21/EasyAccessibilityPackage/issues/24)
 
 You're now ready to use the Easy Accessibility Package!
 
