@@ -37,20 +37,21 @@ This package is designed to hopefully be useful in any context, but may be espec
 
 **If you would like to switch to the new input system for an existing project, [this tutorial](https://www.raywenderlich.com/9671886-new-unity-input-system-getting-started) may prove helpful.**
 
-## Installation
+## Installation 
 
-* Clone the repository, or otherwise download the `com.trudeaua.easyaccessibility` package folder to your computer.
-* In your Unity Project, open the Package Manager through **Window->Package Manager**.
-* Click the `+` dropdown icon at the top left of the Package manager window and select _Add package from disk_.
-* Navigate to the `com.trudeaua.easyaccessibility` package folder and select its `package.json`
-* If you don't have the `Input System` package installed already, a prompt will come up asking for you to enable the new input backends. Click **no** (we will enable them later).
-* Navigate to the `Packages/Easy Accessibility Package/Runtime/Screen Reader/Tolk DLLs` folder in the `Project` view.
-* Right click and select **Show In Explorer**.
-* Copy the files `nvdaControllerClient.dll`, `SAAPI64.dll`, and `Tolk.dll` (but _not_ any of the `.meta` files, or `TolkDotNet.dll`).
-* Return to the Unity Editor and navigate back to your `Assets` folder. Right click and select  **Show In Explorer**.
-* Navigate to the root directory of your project (where the `Assets` folder itself is located) and paste the copied DLL files.
-* Return to the Unity Editor.
-* Finally, navigate to **Edit->Project Settings->Player->Other Settings->Active Input Handling** and select **Both** from the dropdown menu. This will restart the Editor.
+1. Clone the repository, or otherwise download the `com.trudeaua.easyaccessibility` package folder to your computer.
+2. In your Unity Project, open the Package Manager through **Window->Package Manager**.
+3. Click the `+` dropdown icon at the top left of the Package manager window and select _Add package from disk_.
+4. Navigate to the `com.trudeaua.easyaccessibility` package folder and select its `package.json`
+5. If you don't have the `Input System` package installed already, a prompt will come up asking for you to enable the new input backends. Click **no** (we will enable them later).
+6. Navigate to the `Packages/Easy Accessibility Package/Runtime/Screen Reader/Tolk DLLs` folder in the `Project` view.
+7. Right click and select **Show In Explorer**.
+8. Copy the files `nvdaControllerClient.dll`, `SAAPI64.dll`, and `Tolk.dll` (but _not_ any of the `.meta` files, or `TolkDotNet.dll`).
+9. Return to the Unity Editor and navigate back to your `Assets` folder. Right click and select  **Show In Explorer**.
+10. Navigate to the root directory of your project (where the `Assets` folder itself is located) and paste the copied DLL files.
+11. Return to the Unity Editor.
+12. Finally, navigate to **Edit->Project Settings->Player->Other Settings->Active Input Handling** and select **Both** from the dropdown menu. This will restart the Editor.
+13. **Screen Reader Support in Game Builds** - The above instructions only provide screen reader support in the editor. To provide Screen Reader support in game builds, add the files `nvdaControllerClient.dll`, `SAAPI64.dll`, and `Tolk.dll` to your Build folder (or whatever the folder with your .exe is called). Thank you to [GrumpyCrouton](https://github.com/GrumpyCrouton) for [bringing this to my attention.](#24)
 
 You're now ready to use the Easy Accessibility Package!
 
